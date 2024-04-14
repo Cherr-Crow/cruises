@@ -32,6 +32,11 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="sidebar-therd">
+                 <a class="sidebar-therd__link" href="#">Сообщить об ошибке в ЛК</a>
+                 <div class="sidebar-therd__block">Copyright © 2024 Круизы&Путешествия</div>
+            </div>
         </div>
 
     </aside>
@@ -82,7 +87,7 @@
     </header>
 
     <main class="main container">
-        <section>
+        <section class="info">
             <div class="tabs">
                 <ul class="tabs__list">
                     <li class="tabs__item"> <button class="tabs__btn tabs__btn--active">Работа с туром</button> </li>
@@ -97,135 +102,1268 @@
                     </div>
 
                     <div>
-                        <div>
+                        <div class="tabs-content__d">
                             <ul class="tabs-content__list">
                                 <li class="tabs-content__item">
                                     <div class="tabs-content__left">
                                         <span class="tabs-content__label">Дата оформления заказа:</span>
                                     </div>
-                                    <span class="tabs-content__cor">29.04.23</span>
+
+                                    <div class="tabs-content__cor">
+                                        <span>29.04.23</span>
+                                    </div>
                                 </li>
 
                                 <li class="tabs-content__item">
                                     <div class="tabs-content__left">
                                         <span class="tabs-content__label">Номер заказа:</span>
                                     </div>
-                                    <span class="tabs-content__cor">CRU10509A6</span>
+
+                                    <div class="tabs-content__cor">
+                                        <span>CRU10509A6</span>
+                                    </div>
                                 </li>
 
                                 <li class="tabs-content__item">
                                     <div class="tabs-content__left">
                                         <span class="tabs-content__label">Состояние заказа:</span>
                                     </div>
-                                    <span class="tabs-content__cor">36 шт</span>
+
+                                    <div class="tabs-content__cor">
+                                        <div class="tabs-content__div">2</div>
+                                        <span class="tabs-content__span"> услуги - </span>
+                                        <div class="tabs-content__div"> подтверждены 2 услуги</div>
+                                    </div>
                                 </li>
 
                                 <li class="tabs-content__item">
                                     <div class="tabs-content__left">
                                         <span class="tabs-content__label">Даты тура:</span>
                                     </div>
-                                    <span class="tabs-content__cor">31.05.24 — 03.06.24</span>
+
+                                    <div class="tabs-content__cor">
+                                        <span>31.05.24 — 03.06.24</span>
+                                    </div>
                                 </li>
 
                                 <li class="tabs-content__item">
                                     <div class="tabs-content__left">
                                         <span class="tabs-content__label">Состав тура:</span>
                                     </div>
-                                    <span class="tabs-content__cor">круиз, отель, авиа, трансфер, экскурсии</span>
+
+                                    <div class="tabs-content__cor">
+                                        <span>круиз, отель, авиа, трансфер, экскурсии</span>
+                                    </div>
                                 </li>
 
                                 <li class="tabs-content__item">
                                     <div class="tabs-content__left">
                                         <span class="tabs-content__label">Кол-во человек:</span>
                                     </div>
-                                    <span class="tabs-content__cor">3</span>
+
+                                    <div class="tabs-content__cor">
+                                        <span>3</span>
+                                    </div>
                                 </li>
                             </ul>
 
                             <div></div>
                         </div>
 
-                        <div>
-                            <span>Стоимость заказа:</span>
-                            <span>294 330 ₽ (2940 у.е.)</span>
+                        <div class="tabs-cost__block">
+                            <span class="tabs-cost__span">Стоимость заказа:</span>
+                            <span class="tabs-cost__span">294 330 ₽ (2940 у.е.)</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="necessity">
-                <div сlass="necessity-block">
-                    <p class="necessity-block__p">Необходимо подписать доп. соглашение!</p>
+                <div сlass="necessity-div">
+                    <p class="necessity-div__p">Необходимо подписать доп. соглашение!</p>
                 </div>
                 <button class="necessity__btn">Перейти и подписать</button>
             </div>
 
-            <div>
-                <div>
-                    <h3>Данные туристов, отправляющихся в тур:</h3>
-                    <div>
-                        <a href="">Запрос на изменение туристов</a>
+            <div class="tourist">
+                <div class="tourist-top">
+                    <h3 class="tourist-top__title">Данные туристов, отправляющихся в тур:</h3>
+                    <div class="tourist-top__div">
+                        <a class="tourist-top__a" href="#">Запрос на изменение туристов</a>
                     </div>
                 </div>
 
-                <ul>
-                    <li></li>
-                    <li></li>
+                <ul class="tourist__list">
+                    <li class="tourist__item">
+                        <div class="tourist-data">
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Турист №1:</span>
+                                <h4 class="tourist-data__title">Константинопольский Константин Константинович</h4>
+                            </div>
+
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Дата рождения:</span>
+                                <span>01.10.1990</span>
+                            </div>
+
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Информация о туристе:</span>
+                                <a class="tourist-data__a" href="#">Изменить паспортные данные до 19:00 14.03.24</a>
+                            </div>
+                        </div>
+
+                        <div class="tourist-data">
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Виза:</span>
+                                <p class="tourist-data__p">КПредоставить документы до 04.08.24</p>
+                            </div>
+
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Документы по туру:</span>
+                                <p class="tourist-data__p">Документы не готовы</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="tourist__item">
+                        <div class="tourist-data">
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Турист №2:</span>
+                                <h4 class="tourist-data__title">Иванова Татьяна Николаевна</h4>
+                            </div>
+
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Дата рождения:</span>
+                                <span>11.12.1964</span>
+                            </div>
+
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Информация о туристе:</span>
+                                <a class="tourist-data__a" href="#">Ввести данные паспорта через менеджера</a>
+                            </div>
+                        </div>
+
+                        <div class="tourist-data">
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Виза:</span>
+                                <p class="tourist-data__p">Клиент отказался от визы</p>
+                            </div>
+
+                            <div class="tourist-data__block">
+                                <span class="tourist-data__span">Документы по туру:</span>
+                                <p class="tourist-data__p">Доступны после полной оплаты</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
-            <div>
-                <h2>добавить к туру услуги:</h2>
-                <ul>
-                    <li>круиз</li>
-                    <li>отель</li>
-                    <li>перелёт</li>
-                    <li>трансфер</li>
-                    <li>экскурсии</li>
+            <div class="add">
+                <h2 class="add__title">добавить к туру услуги:</h2>
+                <ul class="add__list">
+                    <li class="add__item"> <button class="add__btn">круиз</button> </li>
+                    <li class="add__item"> <button class="add__btn">отель</button> </li>
+                    <li class="add__item"> <button class="add__btn">перелёт</button> </li>
+                    <li class="add__item"> <button class="add__btn">трансфер</button> </li>
+                    <li class="add__item"> <button class="add__btn">экскурсии</button> </li>
                 </ul>
             </div>
 
-            <div>
-                <h3></h3>
+            <div class="composition">
+                <h3 class="composition__title">CОСТАВ ТУРА:</h3>
 
-                <ul>
-                    <li>круиз, </li>
-                    <li>отель, </li>
-                    <li>авиа, </li>
-                    <li>трансфер, </li>
-                    <li>экскурсии</li>
+                <ul class="composition__list">
+                    <li class="composition__item">круиз, </li>
+                    <li class="composition__item">отель, </li>
+                    <li class="composition__item">авиа, </li>
+                    <li class="composition__item">трансфер, </li>
+                    <li class="composition__item">экскурсии</li>
                 </ul>
             </div>
 
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="service">
+                <li class="service__item">
+                    <div class="service-cruise">
+                        <div class="service-cruise__block">
+                            <div class="service-top">
+                                <div class="service-top__block">
+                                    <span class="service-top__span">Услуга №1:</span>
+                                    <h3 class="service-top__title">Круиз</h3>
+                                </div>
+
+                                <button class="service-top__btn">Аннулировать</button>
+                            </div>
+
+                            <div class="cruise-schedule">
+                                <div class="cruise-schedule__block">
+                                    <span class="cruise-schedule__span">Расписание:</span>
+                                    <a class="cruise-schedule__a" href="#">Москва, Россия - Санкт-Петербург, Россия</a>
+                                </div>
+
+                                <button class="cruise-schedule__btn">посмотреть</button>
+                            </div>
+                        </div>
+
+                        <ul class="service-cruise__list">
+                            <li class="service-cruise__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата отправления:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Ночей / дней:</span>
+                                            <span class="service-list__span">6 / 7</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата прибытия:</span>
+                                            <span class="service-list__span">14.11.24</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">2</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Тип питания:</span>
+                                            <span class="service-list__span">С пансионом (завтрак, обед, ужин)</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="service-cruise__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Круиз:</span>
+                                            <span class="service-list__span">Теплоход Максим Литвинов (Проект 302М),
+                                                кр/к Донинтурфлот</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Категория:</span>
+                                            <span class="service-list__span">Название категории,</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">№ каюты:</span>
+                                            <span class="service-list__span">503</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Тип кровати:</span>
+                                            <span class="service-list__span">Кровати стоят отдельно</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Бронь в круизной компании №:</span>
+                                            <span class="service-list__span">3180</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Особые условия:</span>
+                                            <span class="service-list__span">Невозвратный депозит (NRD) 30$</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="service-cruise__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Тип питания:</span>
+                                            <span class="service-list__span">С пансионом (завтрак, обед, ужин)</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Маршрут:</span>
+                                            <span class="service-list__span">Москва, Россия > Углич, Россия > Кузино,
+                                                Россия > Кижи, Россия > Мандроги, Россия > Коневец, Россия > Валаам,
+                                                Россия > Санкт-Петербург, Россия</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="service-bottom">
+                            <div class="service-result">
+                                <span class="service-result__span">ИТОГО:</span>
+                                <span class="service-result__span">58 840 ₽</span>
+                            </div>
+
+                            <div class="service-status">
+                                <span class="service-status__span">Статус:</span>
+                                <div class="service-status__div">подтверждено</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="service__item">
+                    <div class="service-transfer">
+                        <div class="service-transfer__block">
+                            <div class="service-top">
+                                <div class="service-top__block">
+                                    <span class="service-top__span">Услуга №2:</span>
+                                    <h3 class="service-top__title">Трансфер</h3>
+                                </div>
+
+                                <button class="service-top__btn">Аннулировать</button>
+                            </div>
+                        </div>
+
+                        <ul class="service-transfer__list">
+                            <li class="service-transfer__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Время:</span>
+                                            <span class="service-list__span">14:00</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">2</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Класс автомобиля:</span>
+                                            <span class="service-list__span">micro</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Класс автомобиля:</span>
+                                            <span class="service-list__span">micro</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Откуда:</span>
+                                            <span class="service-list__span">САО Район Москва</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Куда:</span>
+                                            <span class="service-list__span">Шереметьево Аэропорт</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="service-bottom">
+                            <div class="service-result">
+                                <span class="service-result__span">ИТОГО:</span>
+                                <span class="service-result__span">58 840 ₽</span>
+                            </div>
+
+                            <div class="service-status">
+                                <span class="service-status__span">Статус:</span>
+                                <div class="service-status__div">подтверждено</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="service__item">
+                    <div class="service-excursion">
+                        <div class="service-transfer__block">
+                            <div class="service-top">
+                                <div class="service-top__block">
+                                    <span class="service-top__span">Услуга №3:</span>
+                                    <h3 class="service-top__title">Экскурсия</h3>
+                                </div>
+
+                                <button class="service-top__btn">Аннулировать</button>
+                            </div>
+                        </div>
+
+                        <ul class="service-transfer__list">
+                            <li class="service-transfer__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Время:</span>
+                                            <span class="service-list__span">14:00</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Продолжительность:</span>
+                                            <span class="service-list__span">4 часа</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">2</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Тип экскурсии:</span>
+                                            <span class="service-list__span">групповая</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Откуда:</span>
+                                            <span class="service-list__span">начало от отеля «IT Park» (вещи можно
+                                                оставить в камере хранения своего отеля)</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Куда</span>
+                                            <span class="service-list__span">окончание в центре города</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Описание:</span>
+                                            <span class="service-list__span">Экскурсия в Мечеть Абу аль-Аббаса аль-Мурси
+                                                в Александрии. На комфортабельном минивэне Toyota с
+                                                кондиционером.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="service-bottom">
+                            <div class="service-result">
+                                <span class="service-result__span">ИТОГО:</span>
+                                <span class="service-result__span">58 840 ₽</span>
+                            </div>
+
+                            <div class="service-status">
+                                <span class="service-status__span">Статус:</span>
+                                <div class="service-status__div">подтверждено</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="service__item">
+                    <div class="service-hotel">
+                        <div class="service-transfer__block">
+                            <div class="service-top">
+                                <div class="service-top__block">
+                                    <span class="service-top__span">Услуга №4:</span>
+                                    <h3 class="service-top__title">Отель</h3>
+                                </div>
+
+                                <button class="service-top__btn">Аннулировать</button>
+                            </div>
+                        </div>
+
+                        <ul class="service-transfer__list">
+                            <li class="service-transfer__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата заезда:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Время заезда:</span>
+                                            <span class="service-list__span">14:00</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата выезда:</span>
+                                            <span class="service-list__span">08.10.23</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Время выезда:</span>
+                                            <span class="service-list__span">12:00</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Продолжительность:</span>
+                                            <span class="service-list__span">4н/5дн</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">2</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Особые условия:</span>
+                                            <span class="service-list__span">Невозвратный депозит (NRD) 30$</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Название:</span>
+                                            <span class="service-list__span">Courtyard Marriott Sochi Krasnaya
+                                                Polyana</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Номер:</span>
+                                            <span class="service-list__span">Улучшенный двухместный номер с 1
+                                                кроватью</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Питание:</span>
+                                            <span class="service-list__span">Ультра всё включено</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="service-bottom">
+                            <div class="service-result">
+                                <span class="service-result__span">ИТОГО:</span>
+                                <span class="service-result__span">58 840 ₽</span>
+                            </div>
+
+                            <div class="service-status">
+                                <span class="service-status__span">Статус:</span>
+                                <div class="service-status__div">подтверждено</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="service__item">
+                    <div class="service-airline">
+                        <div class="service-transfer__block">
+                            <div class="service-top">
+                                <div class="service-top__block">
+                                    <span class="service-top__span">Услуга №5:</span>
+                                    <h3 class="service-top__title">Авиа</h3>
+                                </div>
+
+                                <button class="service-top__btn">Аннулировать</button>
+                            </div>
+                        </div>
+
+                        <ul class="service-transfer__list">
+                            <li class="service-item">
+                                <p class="service-item__p">Туда:</p>
+                            </li>
+                            <li class="service-transfer__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Время:</span>
+                                            <span class="service-list__span">14:00</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">2</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Класс:</span>
+                                            <span class="service-list__span">Эконом</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Откуда</span>
+                                            <span class="service-list__span">Аэропорт Домодедово, Москва</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Куда</span>
+                                            <span class="service-list__span">Аэропорт Сочи, Краснодарский край</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <p class="service-item__p">Обратно:</p>
+                                    </li>
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Время:</span>
+                                            <span class="service-list__span">14:00</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">2</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Класс:</span>
+                                            <span class="service-list__span">Эконом</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Откуда</span>
+                                            <span class="service-list__span">Аэропорт Сочи, Краснодарский край</span>
+                                        </div>
+
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Куда</span>
+                                            <span class="service-list__span">Аэропорт Домодедово, Москва</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="service-bottom">
+                            <div class="service-result">
+                                <span class="service-result__span">ИТОГО:</span>
+                                <span class="service-result__span">58 840 ₽</span>
+                            </div>
+
+                            <div class="service-status">
+                                <span class="service-status__span">Статус:</span>
+                                <div class="service-status__div">подтверждено</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="service__item">
+                    <div class="service-insurance">
+                        <div class="service-transfer__block">
+                            <div class="service-top">
+                                <div class="service-top__block">
+                                    <span class="service-top__span">Услуга №6:</span>
+                                    <h3 class="service-top__title">Страховка</h3>
+                                </div>
+
+                                <button class="service-top__btn">Аннулировать</button>
+                            </div>
+                        </div>
+
+                        <ul class="service-transfer__list">
+                            <li class="service-transfer__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <p class="service-item__p">Страховка: Российская Федерация/Отмена поездки
+                                            расширенная плюс до $ 1 000, 5 дней/чел</p>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата начала:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата окончания:</span>
+                                            <span class="service-list__span">08.10.24</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Продолжительность:</span>
+                                            <span class="service-list__span">4н/5дн</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item service-insurance__item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">1</span>
+                                        </div>
+
+                                        <div class="service-item__block">
+                                            <div class="service-list__block">
+                                                <span class="service-list__span">Стоимость:</span>
+                                                <span class="service-list__span">2 500 ₽</span>
+                                            </div>
+
+                                            <div class="service-list__block service-insurance__status">
+                                                <span>Статус:</span>
+                                                <div>подтверждено</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="service-transfer__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <p class="service-item__p">Страховка: Российская Федерация/Отмена поездки
+                                            расширенная плюс до $ 1 000, 5 дней/чел</p>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата начала:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата окончания:</span>
+                                            <span class="service-list__span">08.10.24</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Продолжительность:</span>
+                                            <span class="service-list__span">4н/5дн</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item service-insurance__item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">1</span>
+                                        </div>
+
+                                        <div class="service-item__block">
+                                            <div class="service-list__block">
+                                                <span class="service-list__span">Стоимость:</span>
+                                                <span class="service-list__span">2 500 ₽</span>
+                                            </div>
+
+                                            <div class="service-list__block service-insurance__status">
+                                                <span>Статус:</span>
+                                                <div>подтверждено</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="service-transfer__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <p class="service-item__p">Страховка: Российская Федерация/Мед страховка, вкл
+                                            обсервацию, все страны, покрытие 50 000 $, 5 дней/возраст от 4 до 69 лет</p>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата начала:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата окончания:</span>
+                                            <span class="service-list__span">08.10.24</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Продолжительность:</span>
+                                            <span class="service-list__span">4н/5дн</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item service-insurance__item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">1</span>
+                                        </div>
+
+                                        <div class="service-item__block">
+                                            <div class="service-list__block">
+                                                <span class="service-list__span">Стоимость:</span>
+                                                <span class="service-list__span">2 500 ₽</span>
+                                            </div>
+
+                                            <div class="service-list__block service-insurance__status">
+                                                <span>Статус:</span>
+                                                <div>подтверждено</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="service-transfer__item">
+                                <ul class="service-list">
+                                    <li class="service-item">
+                                        <p class="service-item__p">Страховка: Российская Федерация/Мед страховка, вкл
+                                            обсервацию, все страны, покрытие 50 000 $, 5 дней/возраст от 4 до 69 лет</p>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата начала:</span>
+                                            <span class="service-list__span">03.10.24</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Дата окончания:</span>
+                                            <span class="service-list__span">08.10.24</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Продолжительность:</span>
+                                            <span class="service-list__span">4н/5дн</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="service-item service-insurance__item">
+                                        <div class="service-list__block">
+                                            <span class="service-list__span">Кол-во чел.:</span>
+                                            <span class="service-list__span">1</span>
+                                        </div>
+
+                                        <div class="service-item__block">
+                                            <div class="service-list__block">
+                                                <span class="service-list__span">Стоимость:</span>
+                                                <span class="service-list__span">2 500 ₽</span>
+                                            </div>
+
+                                            <div class="service-list__block service-insurance__status">
+                                                <span>Статус:</span>
+                                                <div>подтверждено</div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+
+
+                            </li>
+                        </ul>
+
+                        <div class="service-bottom">
+                            <div class="service-result">
+                                <span class="service-result__span">ИТОГО:</span>
+                                <span class="service-result__span">58 840 ₽</span>
+                            </div>
+
+                            <div class="service-status">
+                                <span class="service-status__span">Статус:</span>
+                                <div class="service-status__div">подтверждено</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
 
-            <div>
-                <div></div>
-                <div></div>
+            <div class="bonus">
+                <span class="bonus__span">Зачислено:</span>
+                <div class="bonus__block">200 бонусных рублей</div>
             </div>
 
-            <div></div>
-        </section>
+            <div class="sum">
+                <span class="sum__span">ИТОГО</span>
+                <span class="sum__span">за 2 туристов к оплате:</span>
+                <div class="sum-block__block">
+                    <span class="sum-block__span">1 264 840 ₽</span>
+                    <span class="sum-block__span">- 200 Б₽</span>
+                </div>
+            </div>
 
-        <section>
-            <div>
-                <h2></h2>
-
-                <div></div>
-
-                <div>
-                    <h3>Оплатить / распечатать счёт на оплату</h3>
+            <div class="chat">
+                <div class="chat__block">
+                    <h2 class="chat__title">НАПИСАТЬ менеджерУ</h2>
                 </div>
 
-                <div>
-                    <h3>Забронируйте ещё:</h3>
+                <form class="chat-form" action="#">
+                    <textarea class="chat-form__textarea" name="" id="" cols="30" rows="10"></textarea>
+
+                    <div class="chat-form__block">
+                        <div class="chat-form__btns">
+                            <div class="text-format">
+                                <button>
+                                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 0H4.29479C5.14495 0 5.77769 0.0409277 6.193 0.122783C6.61319 0.199181 6.98697 0.362892 7.31433 0.613915C7.64658 0.864939 7.92264 1.20055 8.14251 1.62074C8.36238 2.03547 8.47231 2.50205 8.47231 3.02046C8.47231 3.58254 8.33551 4.09823 8.06189 4.56753C7.79316 5.03683 7.42671 5.38881 6.96254 5.62347C7.61726 5.83629 8.12052 6.19918 8.47231 6.71214C8.8241 7.2251 9 7.8281 9 8.52115C9 9.06685 8.88518 9.59891 8.65554 10.1173C8.43078 10.6303 8.12052 11.0423 7.72476 11.3533C7.33388 11.6589 6.85016 11.8472 6.27362 11.9181C5.91205 11.9618 5.0399 11.9891 3.65717 12H0V0ZM2.16938 1.99727V4.77217H3.59121C4.43648 4.77217 4.96173 4.75853 5.16694 4.73124C5.53827 4.68213 5.82899 4.54025 6.03909 4.30559C6.25407 4.06548 6.36156 3.75171 6.36156 3.36426C6.36156 2.99318 6.26873 2.69304 6.08306 2.46385C5.90228 2.22919 5.63111 2.08731 5.26954 2.0382C5.05456 2.01091 4.43648 1.99727 3.41531 1.99727H2.16938ZM2.16938 6.76944V9.97817H4.17752C4.95928 9.97817 5.45521 9.95362 5.66531 9.9045C5.98779 9.83902 6.24919 9.68076 6.44951 9.42974C6.65472 9.17326 6.75733 8.8322 6.75733 8.40655C6.75733 8.04638 6.67915 7.74079 6.5228 7.48977C6.36645 7.23874 6.13925 7.05593 5.84121 6.94134C5.54805 6.82674 4.90798 6.76944 3.92101 6.76944H2.16938Z"
+                                            fill="#777777" />
+                                    </svg>
+                                </button>
+
+                                <button>
+                                    <svg width="4" height="12" viewBox="0 0 4 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 12L2.44622 0H4L1.56175 12H0Z" fill="#777777" />
+                                    </svg>
+                                </button>
+
+                                <button>
+                                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 0H2.02566V5.32529C2.02566 6.17036 2.05076 6.71809 2.10094 6.96848C2.18762 7.37089 2.39293 7.69506 2.71685 7.94098C3.04534 8.18243 3.49244 8.30315 4.05817 8.30315C4.63302 8.30315 5.06644 8.18914 5.35843 7.9611C5.65041 7.72859 5.82606 7.44467 5.88537 7.10932C5.94468 6.77398 5.97434 6.2173 5.97434 5.4393V0H8V5.16432C8 6.34474 7.94525 7.17863 7.83576 7.666C7.72626 8.15337 7.52324 8.56472 7.22669 8.90007C6.9347 9.23541 6.54234 9.50369 6.04961 9.7049C5.55689 9.90163 4.9136 10 4.11976 10C3.16168 10 2.43399 9.89269 1.9367 9.67807C1.44397 9.45898 1.05389 9.17729 0.766467 8.833C0.479042 8.48424 0.289706 8.11983 0.19846 7.73977C0.0661534 7.17639 0 6.34474 0 5.2448V0Z"
+                                            fill="#777777" />
+                                        <rect y="11" width="8" height="1" fill="#777777" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="list-format">
+                                <button>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="4" width="11" height="2" rx="1" fill="#777777" />
+                                        <rect x="4" y="5" width="11" height="2" rx="1" fill="#777777" />
+                                        <rect x="4" y="10" width="11" height="2" rx="1" fill="#777777" />
+                                        <rect width="2" height="2" rx="1" fill="#777777" />
+                                        <rect y="5" width="2" height="2" rx="1" fill="#777777" />
+                                        <rect y="10" width="2" height="2" rx="1" fill="#777777" />
+                                    </svg>
+                                </button>
+
+                                <button>
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.30078 5H2.30078V2H1.30078V1.35117C1.30078 1.35117 1.78285 1.25802 2.00098 1C2.14796 0.826131 2.30078 0 2.30078 0H3.30078V2V5Z"
+                                            fill="#777777" />
+                                        <path
+                                            d="M4 11.1135V12H1C1.03249 11.6649 1.12995 11.3478 1.29239 11.0489C1.45482 10.7477 1.77563 10.3492 2.25482 9.85326C2.64061 9.45245 2.87716 9.18071 2.96447 9.03804C3.08223 8.84103 3.14112 8.64629 3.14112 8.4538C3.14112 8.24094 3.08934 8.0779 2.98579 7.96467C2.88426 7.84918 2.74315 7.79144 2.56244 7.79144C2.38376 7.79144 2.24162 7.85145 2.13604 7.97147C2.03046 8.09149 1.96954 8.29076 1.9533 8.56929L1.10051 8.47418C1.15127 7.94882 1.31066 7.57178 1.57868 7.34307C1.8467 7.11436 2.18173 7 2.58376 7C3.02437 7 3.37056 7.13247 3.62234 7.39742C3.87411 7.66236 4 7.99185 4 8.38587C4 8.61005 3.96345 8.82405 3.89036 9.02785C3.81929 9.22939 3.70558 9.44112 3.54924 9.66304C3.44569 9.81024 3.25888 10.022 2.98883 10.2982C2.71878 10.5745 2.54721 10.7579 2.47411 10.8485C2.40305 10.9391 2.34518 11.0274 2.30051 11.1135H4Z"
+                                            fill="#777777" />
+                                        <rect x="6" width="11" height="2" rx="1" fill="#777777" />
+                                        <rect x="6" y="5" width="11" height="2" rx="1" fill="#777777" />
+                                        <rect x="6" y="10" width="11" height="2" rx="1" fill="#777777" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="file-download">
+                                <button class="file-download__btn">Прикрепить изображение</button>
+                            </div>
+
+                            <div class="file-download">
+                                <button class="file-download__btn">Прикрепить изображение</button>
+                            </div>
+                        </div>
+
+                        <button class="chat-form__btn">Отправить</button>
+                    </div>
+                </form>
+
+                <div class="chat-realizer">
+                    <div class="chat-top">
+                        <div class="chat-top__title">Реализатор</div>
+
+                        <div class="chat-top__data">
+                            <span>26.08.23</span>
+                            <span>10:13</span>
+                        </div>
+                    </div>
+
+                    <div class="chat-top__block">
+                        <p class="chat-top__descr">Разнообразный и богатый опыт постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности в значительной степени
+                            обуславливает создание направлений прогрессивного развития.</p>
+                    </div>
+                </div>
+
+                <div class="chat-date">
+                    <span class="chat-date__span"></span>
+                    <div class="chat-date__block">26.10.21</div>
+                    <span class="chat-date__span"></span>
+                </div>
+
+                <div class="chat-supervisor">
+                    <div class="chat-top">
+                        <div class="chat-top__title">Супервайзер</div>
+
+                        <div class="chat-top__data">
+                            <span>26.08.23</span>
+                            <span>10:13</span>
+                        </div>
+                    </div>
+
+                    <div class="chat-top__block">
+                        <p class="chat-top__descr">Вот документ, который вы просили.</p>
+                        <a class="chat-top__a" href="#">договор.pdf</a>
+                    </div>
+                </div>
+
+                <div class="chat-robot">
+                    <div class="chat-top">
+                        <div class="chat-top__title">Robot</div>
+
+                        <div class="chat-top__data">
+                            <span>26.08.23</span>
+                            <span>10:13</span>
+                        </div>
+                    </div>
+
+                    <div class="chat-top__block">
+                        <p class="chat-top__descr">Уважаемые коллеги! Благодарим Вас за оформленный заказ и сообщаем,
+                            что ваша организация может оплатить корпоративной картой данный заказ разными способами.
+                            Информируем Вас, что при некоторых способах оплат возникают дополнительные комиссии: для
+                            владельцев платежных карт банков - резидентов РФ: при оплате банковской картой с помощью
+                            QR-кода - 0%, при оплате банковской картой (кроме American Express, Dinners Club, JCB) -
+                            1,25%, через систему переводов Contact - 0,6%, оплата через терминал МКБ - 0,6%, через
+                            терминалов QIWI - комиссия 1,8%, через терминалы Pay Travel - 0,4%, через операционную кассу
+                            отделений Промсвязьбанка (ПСБ) наличными - 0,4%, через терминалы ПСБ - 0,5% и онлайн-банк
+                            ПСБ - 0,4% ,наличными в офисе - без комиссии. Dear customer! Thank you for your booking! We
+                            would like to inform you that you can pay for the booking in different ways. Please be
+                            inform that some payment methods may include additional fees: for holders of payment cards
+                            of Russian Federation residents banks: paying by credit card via QR code - 0%, by credit
+                            card (except American Express, Dinners Club, JCB) - 1,25%, via Contact - 0.6%, via MCB
+                            terminal - 0,6%, via terminals QIWI - 1.8%, via terminal Pay Travel - 0,4%, via offices of
+                            Promsvyazbank (PSB) cash - 0.4%, via terminals PSB - 0.5%, via online Bank PSB - 0.4%, cash
+                            in the Cruise House's office - without a fee. for holders of payment cards of non - Russian
+                            Federation resident banks: paying via Visa, Master bank card - 1.4%, via American Express,
+                            Dinners Club, JCB - 3.5%</p>
+                    </div>
+                </div>
+
+                <div class="chat-client">
+                    <div class="chat-top">
+                        <div class="chat-top__title">Клиент</div>
+
+                        <div class="chat-top__data">
+                            <span>Константинопольский К.К.</span>
+                            <span>26.08.23</span>
+                            <span>10:13</span>
+                        </div>
+                    </div>
+
+                    <div class="chat-top__block">
+                        <p class="chat-top__descr">Повседневная практика показывает, что постоянное
+                            информационно-пропагандистское обеспечение нашей деятельности требуют определения и
+                            уточнения дальнейших направлений развития.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="payment">
+            <div class="payment-top">
+                <h2 class="payment-top__title">График платежей / Выбрать оплату</h2>
+            </div>
+            <div class="payment__container">
+
+                <div class="payment-table">
+                    <ul class="prepayment-table">
+                        <li class="prepayment-table__item">
+                            <span class="prepayment-table__title">Предоплата до:</span>
+
+                            <div class="prepayment-item">
+                                <div class="prepayment-data__block">
+                                    <span>12:00,</span>
+                                    <span>29.11.24</span>
+                                </div>
+
+                                <div class="prepayment-sum__block"> 35 $ </div>
+
+                                <div class="prepayment-paid__block prepayment-paid__block--success"> Оплачено </div>
+                            </div>
+                        </li>
+
+                        <li class="prepayment-table__item">
+                            <span class="prepayment-table__title">Предоплата до:</span>
+
+                            <div class="prepayment-item">
+                                <div class="prepayment-data__block">
+                                    <span>12:00,</span>
+                                    <span>29.11.24</span>
+                                </div>
+
+                                <div class="prepayment-sum__block"> 35 $ </div>
+
+                                <div class="prepayment-paid__block prepayment-paid__block--error"> Не оплачено </div>
+                            </div>
+                        </li>
+
+                        <li class="prepayment-table__item">
+                            <span class="prepayment-table__title">Полная оплата до:</span>
+
+                            <div class="prepayment-item">
+                                <div class="prepayment-data__block">
+                                    <span>12:00,</span>
+                                    <span>29.11.24</span>
+                                </div>
+
+                                <div class="prepayment-sum__block"> 35 $ </div>
+
+                                <div class="prepayment-paid__block prepayment-paid__block--error"> Не оплачено </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="refund-table">
+                        <li class="refund-table__item">
+                            <span class="refund-table__title">К возврату:</span>
+                            <div class="refund-table__block">
+                                <div class="refund-sum">2 020 230 ₽</div>
+                            </div>
+                        </li>
+
+                        <li class="refund-table__item">
+                            <span class="refund-table__title">Возвращено:</span>
+                            <div class="refund-table__block">
+                                <div class="refund-date">
+                                    <span>12:00,</span>
+                                    <span>29.11.24</span>
+                                </div>
+
+                                <div class="refund-sum">2 020 230 ₽</div>
+                                <span class="refund-rate">(2940 у.е., курс $ 99.90) </span>
+                            </div>
+                        </li>
+
+                        <li class="refund-table__item">
+                            <span class="refund-table__title">Остаток:</span>
+                            <div class="refund-table__block">
+                                <div class="refund-sum">2 020 230 ₽</div>
+                                <span>(2940 у.е.) </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pay">
+                    <div class="pay-top__block">
+                        <h3 class="pay-top__title">Оплатить / распечатать счёт на оплату</h3>
+                        <span class="pay-top__span">Выберите нужную опцию:</span>
+                    </div>
+
+                    <ul class="pay-list">
+                        <li class="pay-item">
+                            <div class="pay-item__block"> <span class="pay-item__span">Наличными</span> <a
+                                    href="#">предоплата</a> / <a href="#">оплата</a> </div>
+                        </li>
+
+                        <li class="pay-item">
+
+                            <div class="pay-item__block"> <span class="pay-item__span">Безналичная</span> <a
+                                    href="#">предоплата</a> / <a href="#">оплата</a> <a href="#">Оплата QR-кодом</a>
+                            </div>
+                        </li>
+
+                        <li class="pay-item">
+
+                            <div class="pay-item__block"> <span class="pay-item__span">Банковская карта</span> <a
+                                    href="#">оплата</a> </div>
+                        </li>
+
+                        <li class="pay-item">
+
+                            <div class="pay-item__block"> <span class="pay-item__span">Терминалы Московского Кредитного
+                                    Банка</span> <a href="#">предоплата</a> / <a href="#">оплата</a> </div>
+                        </li>
+
+                        <li class="pay-item">
+
+                            <div class="pay-item__block"> <span class="pay-item__span">Личный кабинет Промсвязьбанк
+                                    (ПСБ) </span> <a href="#">предоплата</a> / <a href="#">оплата</a> </div>
+                        </li>
+
+                        <li class="pay-item">
+
+                            <div class="pay-item__block"> <span class="pay-item__span">Касса Промсвязьбанк (ПСБ) </span>
+                                <a href="#">предоплата</a> / <a href="#">оплата</a>
+                            </div>
+                        </li>
+
+                        <li class="pay-item">
+                            <div class="pay-item__block"><span class="pay-item__span">Терминалы Промсвязьбанк (ПСБ)
+                                </span> <a href="#">предоплата</a> / <a href="#">оплата</a> </div>
+                        </li>
+
+                        <li class="pay-item">
+
+                            <div class="pay-item__block"> <span class="pay-item__span">Терминалы Элекснет</span> <a
+                                    href="#">предоплата</a> / <a href="#">оплата</a> </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="loyalty">
+                    <div class="loyalty__block"> <span class="loyalty__span">Уровень лояльности:</span> <span class="loyalty__span">скидка:</span> <span>2%</span> </div>
+                    <button class="loyalty__btn">Применить скидку к данному заказу</button>
+                </div>
+
+                <div class="bonus">
+                    <div class="bonus__block"> <span class="bonus__span">Ваши бонусы:</span> <span>8500</span> </div>
+                    <button class="bonus__btn">Оплатить бонусными рублями этот заказ</button>
+                </div>
+
+                <div class="booking">
+                    <h3 class="booking__title">Забронируйте ещё:</h3>
+
+                    <ul class="booking__list">
+                        <li class="booking__item"> <a href="#">круиз</a></li>
+                        <li class="booking__item"> <a href="#">трансфер</a></li>
+                        <li class="booking__item"> <a href="#">отель</a> </li>
+                        <li class="booking__item"> <a href="#">экскурсии</a> </li>
+                        <li class="booking__item"> <a href="#">перелёт</a> </li>
+                    </ul>
                 </div>
             </div>
         </section>
