@@ -98,7 +98,7 @@
                 <div class="tabs-content">
                     <div class="tabs-content__block">
                         <h2 class="tabs-content__title">ИНФОРМАЦИЯ О ЗАКАЗЕ</h2>
-                        <button class="tabs-content__btn">Написать менеджеру</button>
+                        <button class="tabs-content__btn">Написать менеджеру <span>2</span></button>
                     </div>
 
                     <div>
@@ -131,7 +131,7 @@
 
                                     <div class="tabs-content__cor">
                                         <div class="tabs-content__div">2</div>
-                                        <span class="tabs-content__span"> услуги - </span>
+                                        <span class="tabs-content__span"> услуги  — </span>
                                         <div class="tabs-content__div"> подтверждены 2 услуги</div>
                                     </div>
                                 </li>
@@ -167,10 +167,16 @@
                                 </li>
                             </ul>
 
-                            <div></div>
+                            <div class="content-booking">
+                               <span class="content-booking__title">Ваша бронь находится на опции до: </span>
+                               <div class="content-booking__block">
+                                <div class="content-booking__d">26.08.24</div>
+                                <div class="content-booking__d">17:00</div>
+                               </div>
+                            </div>
                         </div>
 
-                        <div class="tabs-cost__block">
+                        <div class="tabs-cost">
                             <span class="tabs-cost__span">Стоимость заказа:</span>
                             <span class="tabs-cost__span">294 330 ₽ (2940 у.е.)</span>
                         </div>
@@ -179,8 +185,8 @@
             </div>
 
             <div class="necessity">
-                <div сlass="necessity-div">
-                    <p class="necessity-div__p">Необходимо подписать доп. соглашение!</p>
+                <div сlass="necessity__block">
+                    <p class="necessity__descr">Необходимо подписать доп. соглашение!</p>
                 </div>
                 <button class="necessity__btn">Перейти и подписать</button>
             </div>
@@ -455,9 +461,13 @@
                                             <span class="service-list__span">micro</span>
                                         </div>
 
+                                
+                                    </li>
+
+                                    <li class="service-item">
                                         <div class="service-list__block">
-                                            <span class="service-list__span">Класс автомобиля:</span>
-                                            <span class="service-list__span">micro</span>
+                                            <span class="service-list__span">Тип трансфера:</span>
+                                            <span class="service-list__span">Индивидуальный</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -494,7 +504,7 @@
 
                 <li class="service__item">
                     <div class="service-excursion">
-                        <div class="service-transfer__block">
+                        <div class="service-excursion__block">
                             <div class="service-top">
                                 <div class="service-top__block">
                                     <span class="service-top__span">Услуга №3:</span>
@@ -505,8 +515,8 @@
                             </div>
                         </div>
 
-                        <ul class="service-transfer__list">
-                            <li class="service-transfer__item">
+                        <ul class="service-excursion__list">
+                            <li class="service-excursion__item">
                                 <ul class="service-list">
                                     <li class="service-item">
                                         <div class="service-list__block">
@@ -554,10 +564,10 @@
                                         </div>
                                     </li>
 
-                                    <li class="service-item">
-                                        <div class="service-list__block">
+                                    <li class="service-item service-descr">
+                                        <div class="service-list__block service-descr__block">
                                             <span class="service-list__span">Описание:</span>
-                                            <span class="service-list__span">Экскурсия в Мечеть Абу аль-Аббаса аль-Мурси
+                                            <span class="service-list__span service-list__descr">Экскурсия в Мечеть Абу аль-Аббаса аль-Мурси
                                                 в Александрии. На комфортабельном минивэне Toyota с
                                                 кондиционером.</span>
                                         </div>
@@ -582,7 +592,7 @@
 
                 <li class="service__item">
                     <div class="service-hotel">
-                        <div class="service-transfer__block">
+                        <div class="service-hotel__block">
                             <div class="service-top">
                                 <div class="service-top__block">
                                     <span class="service-top__span">Услуга №4:</span>
@@ -593,8 +603,8 @@
                             </div>
                         </div>
 
-                        <ul class="service-transfer__list">
-                            <li class="service-transfer__item">
+                        <ul class="service-hotel__list">
+                            <li class="service-hotel__item">
                                 <ul class="service-list">
                                     <li class="service-item">
                                         <div class="service-list__block">
@@ -679,7 +689,7 @@
 
                 <li class="service__item">
                     <div class="service-airline">
-                        <div class="service-transfer__block">
+                        <div class="service-airline__block">
                             <div class="service-top">
                                 <div class="service-top__block">
                                     <span class="service-top__span">Услуга №5:</span>
@@ -690,11 +700,11 @@
                             </div>
                         </div>
 
-                        <ul class="service-transfer__list">
+                        <ul class="service-airline__list">
                             <li class="service-item">
                                 <p class="service-item__p">Туда:</p>
                             </li>
-                            <li class="service-transfer__item">
+                            <li class="service-airline__item">
                                 <ul class="service-list">
                                     <li class="service-item">
                                         <div class="service-list__block">
@@ -788,7 +798,7 @@
 
                 <li class="service__item">
                     <div class="service-insurance">
-                        <div class="service-transfer__block">
+                        <div class="service-insurance__block">
                             <div class="service-top">
                                 <div class="service-top__block">
                                     <span class="service-top__span">Услуга №6:</span>
@@ -799,8 +809,8 @@
                             </div>
                         </div>
 
-                        <ul class="service-transfer__list">
-                            <li class="service-transfer__item">
+                        <ul class="service-insurance__list">
+                            <li class="service-insurance__item">
                                 <ul class="service-list">
                                     <li class="service-item">
                                         <p class="service-item__p">Страховка: Российская Федерация/Отмена поездки
@@ -849,7 +859,7 @@
                                 </ul>
                             </li>
 
-                            <li class="service-transfer__item">
+                            <li class="service-insurance__item">
                                 <ul class="service-list">
                                     <li class="service-item">
                                         <p class="service-item__p">Страховка: Российская Федерация/Отмена поездки
@@ -898,7 +908,7 @@
                                 </ul>
                             </li>
 
-                            <li class="service-transfer__item">
+                            <li class="service-insurance__item">
                                 <ul class="service-list">
                                     <li class="service-item">
                                         <p class="service-item__p">Страховка: Российская Федерация/Мед страховка, вкл
@@ -947,7 +957,7 @@
                                 </ul>
                             </li>
 
-                            <li class="service-transfer__item">
+                            <li class="service-insurance__item">
                                 <ul class="service-list">
                                     <li class="service-item">
                                         <p class="service-item__p">Страховка: Российская Федерация/Мед страховка, вкл
@@ -1024,7 +1034,7 @@
             <div class="sum">
                 <span class="sum__span">ИТОГО</span>
                 <span class="sum__span">за 2 туристов к оплате:</span>
-                <div class="sum-block__block">
+                <div class="sum-block">
                     <span class="sum-block__span">1 264 840 ₽</span>
                     <span class="sum-block__span">- 200 Б₽</span>
                 </div>
@@ -1036,7 +1046,7 @@
                 </div>
 
                 <form class="chat-form" action="#">
-                    <textarea class="chat-form__textarea" name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="chat-form__textarea" name="input" id="chat-input" cols="30" rows="10"></textarea>
 
                     <div class="chat-form__block">
                         <div class="chat-form__btns">
@@ -1102,7 +1112,7 @@
                             </div>
 
                             <div class="file-download">
-                                <button class="file-download__btn">Прикрепить изображение</button>
+                                <button class="file-download__btn">Прикрепить документ</button>
                             </div>
                         </div>
 
@@ -1120,8 +1130,8 @@
                         </div>
                     </div>
 
-                    <div class="chat-top__block">
-                        <p class="chat-top__descr">Разнообразный и богатый опыт постоянное
+                    <div class="chat-sms">
+                        <p class="chat-sms__descr">Разнообразный и богатый опыт постоянное
                             информационно-пропагандистское обеспечение нашей деятельности в значительной степени
                             обуславливает создание направлений прогрессивного развития.</p>
                     </div>
@@ -1143,9 +1153,9 @@
                         </div>
                     </div>
 
-                    <div class="chat-top__block">
-                        <p class="chat-top__descr">Вот документ, который вы просили.</p>
-                        <a class="chat-top__a" href="#">договор.pdf</a>
+                    <div class="chat-sms">
+                        <p class="chat-sms__descr">Вот документ, который вы просили.</p>
+                        <a class="chat-sms__a" href="#">договор.pdf</a>
                     </div>
                 </div>
 
@@ -1159,8 +1169,8 @@
                         </div>
                     </div>
 
-                    <div class="chat-top__block">
-                        <p class="chat-top__descr">Уважаемые коллеги! Благодарим Вас за оформленный заказ и сообщаем,
+                    <div class="chat-sms">
+                        <p class="chat-sms__descr">Уважаемые коллеги! Благодарим Вас за оформленный заказ и сообщаем,
                             что ваша организация может оплатить корпоративной картой данный заказ разными способами.
                             Информируем Вас, что при некоторых способах оплат возникают дополнительные комиссии: для
                             владельцев платежных карт банков - резидентов РФ: при оплате банковской картой с помощью
@@ -1192,8 +1202,8 @@
                         </div>
                     </div>
 
-                    <div class="chat-top__block">
-                        <p class="chat-top__descr">Повседневная практика показывает, что постоянное
+                    <div class="chat-sms">
+                        <p class="chat-sms__descr">Повседневная практика показывает, что постоянное
                             информационно-пропагандистское обеспечение нашей деятельности требуют определения и
                             уточнения дальнейших направлений развития.</p>
                     </div>
@@ -1214,14 +1224,14 @@
                             <span class="prepayment-table__title">Предоплата до:</span>
 
                             <div class="prepayment-item">
-                                <div class="prepayment-data__block">
+                                <div class="prepayment-data">
                                     <span>12:00,</span>
                                     <span>29.11.24</span>
                                 </div>
 
-                                <div class="prepayment-sum__block"> 35 $ </div>
+                                <div class="prepayment-sum"> 35 $ </div>
 
-                                <div class="prepayment-paid__block prepayment-paid__block--success"> Оплачено </div>
+                                <div class="prepayment-paid prepayment-paid--success"> Оплачено </div>
                             </div>
                         </li>
 
@@ -1229,14 +1239,14 @@
                             <span class="prepayment-table__title">Предоплата до:</span>
 
                             <div class="prepayment-item">
-                                <div class="prepayment-data__block">
+                                <div class="prepayment-data">
                                     <span>12:00,</span>
                                     <span>29.11.24</span>
                                 </div>
 
-                                <div class="prepayment-sum__block"> 35 $ </div>
+                                <div class="prepayment-sum"> 35 $ </div>
 
-                                <div class="prepayment-paid__block prepayment-paid__block--error"> Не оплачено </div>
+                                <div class="prepayment-paid prepayment-paid--error"> Не оплачено </div>
                             </div>
                         </li>
 
@@ -1244,14 +1254,14 @@
                             <span class="prepayment-table__title">Полная оплата до:</span>
 
                             <div class="prepayment-item">
-                                <div class="prepayment-data__block">
+                                <div class="prepayment-data">
                                     <span>12:00,</span>
                                     <span>29.11.24</span>
                                 </div>
 
-                                <div class="prepayment-sum__block"> 35 $ </div>
+                                <div class="prepayment-sum"> 35 $ </div>
 
-                                <div class="prepayment-paid__block prepayment-paid__block--error"> Не оплачено </div>
+                                <div class="prepayment-paid prepayment-paid--error"> Не оплачено </div>
                             </div>
                         </li>
                     </ul>
@@ -1288,7 +1298,7 @@
                 </div>
 
                 <div class="pay">
-                    <div class="pay-top__block">
+                    <div class="pay-top">
                         <h3 class="pay-top__title">Оплатить / распечатать счёт на оплату</h3>
                         <span class="pay-top__span">Выберите нужную опцию:</span>
                     </div>
