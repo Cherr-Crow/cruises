@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
     <title>ЛК. Работа с туром, заключение договора</title>
 </head>
 
@@ -34,11 +35,24 @@
             </div>
 
             <div class="sidebar-therd">
-                 <a class="sidebar-therd__link" href="#">Сообщить об ошибке в ЛК</a>
-                 <div class="sidebar-therd__block">Copyright © 2024 Круизы&Путешествия</div>
+                <a class="sidebar-therd__link" href="#">Сообщить об ошибке в ЛК</a>
+                <div class="sidebar-therd__block">Copyright © 2024 Круизы&Путешествия</div>
             </div>
         </div>
 
+        <div class="sidebar-close">
+            <div class="sidebar-first">
+                <a class="sidebar-first__link" href="#"> <img src="images/logo-min.svg" alt="logo"> </a>
+                <button class="sidebar-first__button">ЛК</button>
+            </div>
+
+            <div class="sidebar-second">
+                <button class="sidebar-second__button"></button>
+                <div></div>
+            </div>
+
+            <div class="sidebar-therd"></div>
+        </div>
     </aside>
 
     <header class="header">
@@ -131,7 +145,7 @@
 
                                     <div class="tabs-content__cor">
                                         <div class="tabs-content__div">2</div>
-                                        <span class="tabs-content__span"> услуги  — </span>
+                                        <span class="tabs-content__span"> услуги — </span>
                                         <div class="tabs-content__div"> подтверждены 2 услуги</div>
                                     </div>
                                 </li>
@@ -168,11 +182,11 @@
                             </ul>
 
                             <div class="content-booking">
-                               <span class="content-booking__title">Ваша бронь находится на опции до: </span>
-                               <div class="content-booking__block">
-                                <div class="content-booking__d">26.08.24</div>
-                                <div class="content-booking__d">17:00</div>
-                               </div>
+                                <span class="content-booking__title">Ваша бронь находится на опции до: </span>
+                                <div class="content-booking__block">
+                                    <div class="content-booking__d">26.08.24</div>
+                                    <div class="content-booking__d">17:00</div>
+                                </div>
                             </div>
                         </div>
 
@@ -189,6 +203,109 @@
                     <p class="necessity__descr">Необходимо подписать доп. соглашение!</p>
                 </div>
                 <button class="necessity__btn">Перейти и подписать</button>
+            </div>
+
+            <div class="payment-mini">
+                <div class="payment-chart">
+                    <h2 class="payment-chart__title">ГРАФИК ПЛАТЕЖЕЙ</h2>
+
+                    <ul class="chart-list">
+                        <li class="chart-item">
+                            <span class="chart-item__title">Предоплата до:</span>
+
+                            <div class="chart-item__block">
+                                <div class="prepayment-data">
+                                    <span>12:00,</span>
+                                    <span>29.11.24</span>
+                                </div>
+
+                                <div class="prepayment-sum"> 35 $ </div>
+
+                                <div class="prepayment-paid prepayment-paid--success"> Оплачено </div>
+                            </div>
+                        </li>
+
+                        <li class="chart-item">
+                            <span class="chart-item__title">Полная оплата до:</span>
+
+                            <div class="chart-item__block">
+                                <div class="prepayment-data">
+                                    <span>12:00,</span>
+                                    <span>29.11.24</span>
+                                </div>
+
+                                <div class="prepayment-sum"> 35 $ </div>
+
+                                <div class="prepayment-paid prepayment-paid--error"> Не оплачено </div>
+                            </div>
+                        </li>
+
+                        <li class="chart-item">
+                            <span class="chart-item__title">Предоплата до:</span>
+
+                            <div class="chart-item__block">
+                                <div class="prepayment-data">
+                                    <span>12:00,</span>
+                                    <span>29.11.24</span>
+                                </div>
+
+                                <div class="prepayment-sum"> 35 $ </div>
+
+                                <div class="prepayment-paid prepayment-paid--error"> Не оплачено </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="refund-table">
+                        <li class="refund-table__item">
+                            <span class="refund-table__title">К возврату:</span>
+                            <div class="refund-table__block">
+                                <div class="refund-sum">2 020 230 ₽</div>
+                            </div>
+                        </li>
+
+                        <li class="refund-table__item">
+                            <span class="refund-table__title">Возвращено:</span>
+                            <div class="refund-table__block">
+                                <div class="refund-date">
+                                    <span>12:00,</span>
+                                    <span>29.11.24</span>
+                                </div>
+
+                                <div class="refund-sum">2 020 230 ₽</div>
+                                <span class="refund-rate">(2940 у.е., курс $ 99.90) </span>
+                            </div>
+                        </li>
+
+                        <li class="refund-table__item">
+                            <span class="refund-table__title">Остаток:</span>
+                            <div class="refund-table__block">
+                                <div class="refund-sum">2 020 230 ₽</div>
+                                <span>(2940 у.е.) </span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="payment-btns">
+                    <button class="payment-btns__btn"> Распечатать счёт на оплату </button>
+
+                    <button class="payment-btns__btn"> Оплатить </button>
+                </div>
+
+                <div class="payment-loyalty">
+                    <div class="payment-discount">
+                        <div class="payment-discount__block"><span>Уровень лояльности: скидка:</span> <span>2%</span>
+                        </div>
+                        <button>Применить скидку к данному заказу</button>
+                    </div>
+
+                    <div class="payment-bonus">
+                        <div class="payment-bonus__block"><span>Ваши бонусы:</span> <span>8500</span></div>
+                        <button>Оплатить бонусными рублями этот заказ</button>
+                    </div>
+                </div>
             </div>
 
             <div class="tourist">
@@ -461,7 +578,7 @@
                                             <span class="service-list__span">micro</span>
                                         </div>
 
-                                
+
                                     </li>
 
                                     <li class="service-item">
@@ -567,7 +684,8 @@
                                     <li class="service-item service-descr">
                                         <div class="service-list__block service-descr__block">
                                             <span class="service-list__span">Описание:</span>
-                                            <span class="service-list__span service-list__descr">Экскурсия в Мечеть Абу аль-Аббаса аль-Мурси
+                                            <span class="service-list__span service-list__descr">Экскурсия в Мечеть Абу
+                                                аль-Аббаса аль-Мурси
                                                 в Александрии. На комфортабельном минивэне Toyota с
                                                 кондиционером.</span>
                                         </div>
@@ -1355,7 +1473,8 @@
                 </div>
 
                 <div class="loyalty">
-                    <div class="loyalty__block"> <span class="loyalty__span">Уровень лояльности:</span> <span class="loyalty__span">скидка:</span> <span>2%</span> </div>
+                    <div class="loyalty__block"> <span class="loyalty__span">Уровень лояльности:</span> <span
+                            class="loyalty__span">скидка:</span> <span>2%</span> </div>
                     <button class="loyalty__btn">Применить скидку к данному заказу</button>
                 </div>
 

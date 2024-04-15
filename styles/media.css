@@ -1,0 +1,67 @@
+@media (max-width: 1044px) {
+    .wrapper .sidebar-close {
+        display: block;
+    }
+
+    .sidebar-close {
+        background: var(--primary);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 52px;
+        height: 100%;
+        padding: 20px 0;
+        transition: all 0.5s ease;
+    }
+
+    .sidebar-second {
+        margin: 0 auto;
+    }
+
+    .sidebar-second__button {
+        padding-top: 10px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        max-width: 944px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .payment-mini {
+        display: block;
+    }
+    
+    .payment {
+        display: none;
+    }
+
+    .container {
+        max-width: 684px;
+    }
+
+    .info {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header .header-descr {
+        display: none;
+    }
+
+    .tabs-content__block {
+        justify-content: space-between;
+    }
+
+    .tourist-data {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
