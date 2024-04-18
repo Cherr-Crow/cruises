@@ -44,7 +44,6 @@ ul {
 }
 
 .container {
-    max-width: 980px;
     padding-right: 16px;
     margin-left: auto;
 }
@@ -68,13 +67,26 @@ body {
 
 .wrapper .sidebar {
     background: var(--primary);
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 266px;
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
+}
+
+.sidebar-icon {
+    position: absolute;
+    top: 4px;
+    right: -34px;
+    padding: 15px 17px;
+    background-color: #fff;
+    background-image: url(../images/menu-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .sidebar-first {
@@ -88,14 +100,14 @@ body {
     width: 100%;
 }
 
-.sidebar-therd {
+.sidebar-third {
     position: absolute;
     margin-top: auto;
     bottom: 0;
     top: auto;
 }
 
-.sidebar-therd__link {
+.sidebar-third__link {
     margin-bottom: 9px;
     display: flex;
     justify-content: center;
@@ -103,7 +115,7 @@ body {
     color: white;
 }
 
-.sidebar-therd__block {
+.sidebar-third__block {
     padding: 12px 13px;
     background-color: #0D6ABC;
     font-size: 13px;
@@ -118,6 +130,9 @@ body {
 }
 
 .sidebar-first__button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     width: 100%;
     padding: 7px;
     color: white;
@@ -138,17 +153,29 @@ body {
 }
 
 .sidebar-second__button {
+    display: flex;
+    align-items: center;
     margin-bottom: 12px;
-    padding: 6px;
-    padding-left: 44px;
+    padding: 6px;;
     text-align: left;
     width: 100%;
-    background-image: url(../images/icon-back.svg);
-    background-repeat: no-repeat;
-    background-position: center left;
     background-color: transparent;
+    border-radius: 3px;
     color: white;
     font-size: 13px;
+}
+
+.sidebar-second__button span {
+    display: block;
+    margin-right: auto;
+    margin-right: 6px;
+    background-image: url(../images/Arrow-icon.svg);
+    background-color: #1A459C;
+    border-radius: 4px;
+    width: 36px;
+    height: 31px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .sidebar-second__span {
@@ -203,11 +230,11 @@ body {
 }
 
 .header-top {
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     margin-bottom: 18px;
     width: 100%;
-    background-color: #1981DC
+    background-color: #4990FB;
 }
 
 .header-top__block {
@@ -301,9 +328,20 @@ body {
 
 /* main */
 
+.main .main__container, .header-top__container, .header-bottom__container {
+    padding-left: 16px;
+}
+
+.header-top__container {
+    padding-left: 45px;
+}
+
+.main__container {
+    display: flex;
+}
+
 .info {
     margin-right: 16px;
-    max-width: 598px;
     width: 100%;
 }
 
@@ -357,6 +395,7 @@ body {
 .tabs-content__block {
     margin-bottom: 13px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 8px;
     border-bottom: 3px solid #0F7EE6;
@@ -531,7 +570,7 @@ body {
     border-radius: 8px;
 }
 
-.necessity div {
+.necessity div:first-child div {
     margin-right: 16px;
     background-image: url(../images/icon-warning.svg);
     background-repeat: no-repeat;
@@ -697,6 +736,11 @@ body {
     width: 100%;
 }
 
+.add__btn {
+    display: flex;
+    justify-content: center;
+}
+
 .add__item:not(:last-child) {
     margin-right: 8px;
 }
@@ -770,6 +814,7 @@ body {
     background-image: url(../images/icon-cancel.svg);
     background-repeat: no-repeat;
     background-position: left;
+    background-color: transparent;
 }
 
 /* cruise-schedule */
@@ -822,6 +867,7 @@ body {
     padding-bottom: 16px;
     border-bottom: 1px dotted #888;
     margin-bottom: 16px;
+    width: 100%;
 }
 
 .service-item {
@@ -836,7 +882,6 @@ body {
 .service-list__block {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .service-descr__block span:first-child {
@@ -917,7 +962,7 @@ body {
 
 .service-status__div {
     padding: 4px 8px;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     color: #5CB85C;
     border: 1px solid #5CB85C;
@@ -991,6 +1036,7 @@ body {
 .sum__span {
     margin-right: 8px;
     color: #0F7EE6;
+    font-size: 15px;
 }
 
 .sum-block {
@@ -1061,11 +1107,11 @@ body {
 .chat-form__btns {
     display: flex;
     flex-wrap: wrap;
+    max-width: 350px;
 }
 
-.chat-form__btns .list-format button,
-.chat-form__btns .text-format button {
-    all: unset;
+.chat-form__btns .list-format div,
+.chat-form__btns .text-format div {
     cursor: pointer;
 }
 
@@ -1077,17 +1123,21 @@ body {
     padding-left: 17px;
 }
 
-.text-format button:not(:last-child) {
+.text-format div:not(:last-child) {
     margin-right: 10px;
 }
 
-.file-download__btn:nth-child(1) {
-    background-image: url(../images/icon-image.svg);
+.list-format div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.download-first {
+    background-image: url(../images/icon-image-chat.svg);
     background-repeat: no-repeat;
     padding-left: 20px;
 }
 
-.file-download__btn:last-child {
+.download-second {
     background-image: url(../images/icon-attach.svg);
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -1095,6 +1145,7 @@ body {
 
 .text-format,
 .list-format {
+    display: flex;
     margin-right: 26px;
 }
 
@@ -1127,7 +1178,7 @@ body {
     border-radius: 4px;
 }
 
-.chat-supervisor p {
+.chat-supervisor div {
     margin-bottom: 5px;
 }
 
@@ -1139,7 +1190,7 @@ body {
     border-radius: 4px;
 }
 
-.chat-robot .chat-sms__descr {
+.chat-sms__descr {
     line-height: 20px;
 }
 
@@ -1186,6 +1237,7 @@ body {
     border: 1.5px solid #2F32FE;
     border-radius: 2px;
     font-size: 13px;
+    font-weight: 500;
 }
 
 .chat-client .chat-top__data span:nth-child(1) {
@@ -1230,6 +1282,7 @@ body {
     color: #777777;
     font-size: 12px;
     font-weight: 500;
+    background-color: transparent;
 }
 
 /* 2 SECTION */
@@ -1297,6 +1350,7 @@ body {
     background-color: #FFFFFF;
     border-radius: 4px;
     font-size: 13px;
+    font-weight: bold;
     width: 100%;
 }
 
@@ -1351,6 +1405,8 @@ body {
     padding: 10.5px;
     max-width: 275px;
     width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: #FF9600;
     border-radius: 3px;
 
@@ -1406,20 +1462,23 @@ body {
     border-radius: 8px;
 }
 
-.payment-discount span:first-child, .payment-bonus__block span:first-child {
+.payment-discount span:first-child,
+.payment-bonus__block span:first-child {
     display: block;
     margin-right: 8px;
     font-size: 15px;
     font-weight: 500;
 }
 
-.payment-discount__block, .payment-bonus__block {
-  display: flex;
-  margin-bottom: 6px;
+.payment-discount__block,
+.payment-bonus__block {
+    display: flex;
+    margin-bottom: 6px;
 }
 
 
-.payment-discount span:last-child, .payment-bonus__block span:last-child {
+.payment-discount span:last-child,
+.payment-bonus__block span:last-child {
     font-size: 15px;
     font-weight: 500;
     color: #0F7EE6;
@@ -1464,11 +1523,21 @@ body {
 
 .payment-mini .refund-table {
     padding: 2px 6px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
 }
 
-.payment-mini .refund-table__block, .payment-mini .refund-rate {
+.refund-table__item:nth-child(1) {
+  grid-column: 1 / 1;
+}
+
+.refund-table__item:nth-child(2) {
+    grid-column: 2 / 4;
+  }
+
+.payment-mini .refund-table__block,
+.payment-mini .refund-rate {
     width: 100%;
 }
 
@@ -1480,6 +1549,7 @@ body {
 
 .refund-table {
     border: 1px solid #BBBBBB;
+    border-radius: 4px;
 }
 
 .refund-table__item {
@@ -1600,6 +1670,7 @@ body {
 .loyalty__block span:last-child {
     color: #0F7EE6;
     font-weight: 500;
+    font-size: 15px;
 }
 
 .loyalty__btn,
@@ -1675,31 +1746,31 @@ body {
 .booking__item:nth-child(1) {
     background-image: url(../images/icon-cruise.svg);
     background-repeat: no-repeat;
-    background-position: 16px 9px;
+    background-position: 16px 12px;
 }
 
 .booking__item:nth-child(2) {
     background-image: url(../images/icon-transfer.svg);
     background-repeat: no-repeat;
-    background-position: 16px 9px;
+    background-position: 16px 12px;
 }
 
 .booking__item:nth-child(3) {
     background-image: url(../images/icon-hotel.svg);
     background-repeat: no-repeat;
-    background-position: 16px 9px;
+    background-position: 16px 12px;
 }
 
 .booking__item:nth-child(4) {
     background-image: url(../images/icon-excursion.svg);
     background-repeat: no-repeat;
-    background-position: 16px 9px;
+    background-position: 16px 12px;
 }
 
 .booking__item:nth-child(5) {
     background-image: url(../images/icon-flight.svg);
     background-repeat: no-repeat;
-    background-position: 16px 9px;
+    background-position: 16px 12px;
 }
 
 .booking__item a {
