@@ -72,7 +72,7 @@ body {
     left: 0;
     width: 266px;
     height: 100%;
-    padding: 20px 0;
+    padding: 26px 0;
     transition: all 0.5s ease;
 }
 
@@ -93,7 +93,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 17px;
+    margin-bottom: 8px;
 }
 
 .sidebar-second {
@@ -115,6 +115,13 @@ body {
     color: white;
 }
 
+.sidebar-close .sidebar-third {
+    margin-top: auto;
+    background-color: #0D6ABC;
+    height: 41px;
+    width: 100%;
+}
+
 .sidebar-third__block {
     padding: 12px 13px;
     background-color: #0D6ABC;
@@ -126,7 +133,7 @@ body {
 .sidebar-first__link {
     display: block;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
 }
 
 .sidebar-first__button {
@@ -143,7 +150,7 @@ body {
 
 .sidebar-second__block {
     margin: 0 auto;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
     max-width: 250px;
 }
 
@@ -156,7 +163,8 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    padding: 6px;;
+    padding: 6px;
+    ;
     text-align: left;
     width: 100%;
     background-color: transparent;
@@ -227,10 +235,11 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    padding-right: 0;
 }
 
 .header-top {
-    padding-top: 4px;
+    padding-top: 5px;
     padding-bottom: 4px;
     margin-bottom: 18px;
     width: 100%;
@@ -328,8 +337,15 @@ body {
 
 /* main */
 
-.main .main__container, .header-top__container, .header-bottom__container {
+.main .main__container,
+.header-top__container,
+.header-bottom__container {
     padding-left: 16px;
+    width: 100%;
+}
+
+..header-top__container {
+    padding-left: 51px;
 }
 
 .header-top__container {
@@ -397,12 +413,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     border-bottom: 3px solid #0F7EE6;
 }
 
 .tabs-content__title {
-    margin-right: 33px;
     color: #0F7EE6;
     font-size: 14px;
     font-weight: 700;
@@ -410,15 +425,23 @@ body {
 
 .tabs-content__btn {
     position: relative;
-    padding: 12px 98px 12px 120px;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    max-width: 363px;
+    width: 100%;
     background-color: #5CB85C;
     border-radius: 4px;
     color: white;
     font-size: 14px;
     font-weight: 700;
-    background-image: url(../images/icon-chat.svg);
-    background-repeat: no-repeat;
-    background-position: 98px 11px;
+    background-position: 89px 11px;
+}
+
+.tabs-content__btn svg {
+    margin-right: 6px;
+    width: 18px;
+    height: 16px;
 }
 
 .tabs-content__btn span {
@@ -436,7 +459,7 @@ body {
 /* section 1 - tabs */
 
 .tabs-content__d {
-    margin-bottom: 11px;
+    margin-bottom: 18px;
     padding-bottom: 16px;
     border-bottom: 1px solid #CECECE;
 }
@@ -1288,6 +1311,8 @@ body {
 /* 2 SECTION */
 
 .payment {
+    max-width: 350px;
+    width: 100%;
     padding-top: 35px;
 }
 
@@ -1307,7 +1332,7 @@ body {
     padding: 8px 16px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    background: linear-gradient(rgba(106, 172, 234, 1), rgba(15, 126, 230, 1));
+    background: linear-gradient(45deg, rgba(15, 126, 230, 1), rgba(106, 172, 234, 1));
 }
 
 .payment-top__title {
@@ -1331,7 +1356,7 @@ body {
 }
 
 .prepayment-item {
-    padding: 6px 8px;
+    padding: 5px 8px;
     background-color: #EDEDED;
     border-radius: 2px;
 }
@@ -1529,12 +1554,12 @@ body {
 }
 
 .refund-table__item:nth-child(1) {
-  grid-column: 1 / 1;
+    grid-column: 1 / 1;
 }
 
 .refund-table__item:nth-child(2) {
     grid-column: 2 / 4;
-  }
+}
 
 .payment-mini .refund-table__block,
 .payment-mini .refund-rate {
@@ -1623,7 +1648,7 @@ body {
 }
 
 .pay-list {
-    padding: 8px;
+    padding: 4px 11px;
     background-color: #EDEDED;
     border-radius: 4px;
 }

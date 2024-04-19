@@ -1,8 +1,7 @@
-@media (min-width: 1261px) {
-    .wrapper {
-        height: 100vh;
+@media (max-width: 1260px) {
+    .wrapper .sidebar {
+        position: fixed;
     }
-
 }
 
 @media (max-width: 1044px) {
@@ -11,7 +10,7 @@
     .header-top__container,
     .header-bottom__container {
         display: flex;
-        max-width: 92%;
+        max-width: 94.5%;
         margin-left: auto;
     }
 
@@ -44,6 +43,10 @@
 }
 
 @media (max-width: 950px) {
+
+    .main .main__container {
+        max-width: 93%;
+    }
 
     .payment-mini {
         display: block;
