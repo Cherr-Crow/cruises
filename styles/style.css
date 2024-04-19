@@ -344,8 +344,12 @@ body {
     width: 100%;
 }
 
-..header-top__container {
+.header-top__container {
     padding-left: 51px;
+}
+
+.main__container {
+    padding-bottom: 16px;
 }
 
 .header-top__container {
@@ -668,6 +672,10 @@ body {
     margin-bottom: 4px;
 }
 
+.tourist-data__block span:last-child {
+    font-size: 14px;
+}
+
 .tourist-data:not(:last-child) {
     margin-bottom: 16px;
 }
@@ -769,6 +777,8 @@ body {
 }
 
 .add__btn {
+    display: flex;
+    align-items: center;
     padding-top: 4px;
     padding-bottom: 4px;
     width: 100%;
@@ -776,9 +786,6 @@ body {
     font-size: 13px;
     background-color: #FF9600;
     border-radius: 4px;
-    background-image: url(../images/Union.svg);
-    background-repeat: no-repeat;
-    background-position: 6px 8px;
 }
 
 /* composition */
@@ -892,6 +899,11 @@ body {
     margin-bottom: 16px;
     width: 100%;
 }
+
+ .service-insurance .service-list {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+ }
 
 .service-item {
     display: flex;
@@ -1024,7 +1036,7 @@ body {
 
 /* bonus */
 
-.bonus {
+.info .bonus {
     margin-bottom: 10px;
     padding: 16px;
     background-color: #fff;
@@ -1711,23 +1723,22 @@ body {
 
 /* bonus */
 
-.bonus {
+.payment .bonus {
     display: flex;
-    flex-direction: column;
-    ;
+    flex-direction: column;;
     margin-bottom: 16px;
     padding: 12px;
     border: 1px solid #CECECE;
     border-radius: 8px;
 }
 
-.bonus__block {
+.payment .bonus__block {
     display: flex;
     align-items: center;
     margin-bottom: 8px;
 }
 
-.bonus__span {
+.payment .bonus__span {
     font-size: 15px;
     font-weight: 500;
     color: #0A2239;
@@ -1771,7 +1782,7 @@ body {
 .booking__item:nth-child(1) {
     background-image: url(../images/icon-cruise.svg);
     background-repeat: no-repeat;
-    background-position: 16px 12px;
+    background-position: 16px 9px;
 }
 
 .booking__item:nth-child(2) {
@@ -1783,19 +1794,19 @@ body {
 .booking__item:nth-child(3) {
     background-image: url(../images/icon-hotel.svg);
     background-repeat: no-repeat;
-    background-position: 16px 12px;
+    background-position: 16px 8px;
 }
 
 .booking__item:nth-child(4) {
     background-image: url(../images/icon-excursion.svg);
     background-repeat: no-repeat;
-    background-position: 16px 12px;
+    background-position: 16px 8px;
 }
 
 .booking__item:nth-child(5) {
     background-image: url(../images/icon-flight.svg);
     background-repeat: no-repeat;
-    background-position: 16px 12px;
+    background-position: 19px 8px;
 }
 
 .booking__item a {
