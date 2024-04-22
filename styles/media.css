@@ -6,12 +6,12 @@
 
 @media (max-width: 1044px) {
 
-    .main .main__container,
-    .header-top__container,
-    .header-bottom__container {
-        display: flex;
-        max-width: 94.5%;
-        margin-left: auto;
+    .header-top__container {
+     padding-left: 16px;
+    }
+
+    .container-wrapper {
+        padding-left: 50px;
     }
 
     .wrapper .sidebar-close {
@@ -40,13 +40,15 @@
     .sidebar {
         display: none;
     }
+
+    .sidebar-second__button span {
+        background-image: url(../images/Arrow-close-icon.svg);
+        margin-right: 0;
+        padding: 0;
+    }
 }
 
-@media (max-width: 950px) {
-
-    .main .main__container {
-        max-width: 93%;
-    }
+@media (max-width: 968px) {
 
     .payment-mini {
         display: block;
@@ -59,12 +61,6 @@
 
     .refund-table {
         max-width: 100%;
-    }
-
-    .sidebar-second__button span {
-        background-image: url(../images/Arrow-close-icon.svg);
-        margin-right: 0;
-        padding: 0;
     }
 
     .sidebar-second__button {
