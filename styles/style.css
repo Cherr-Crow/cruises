@@ -77,14 +77,11 @@ body {
     transition: all 0.5s ease;
 }
 
-.container-wrapper{
+.container-wrapper {
     padding-left: 266px;
 }
 
 .sidebar-icon {
-    position: absolute;
-    top: 4px;
-    right: -34px;
     padding: 15px 17px;
     background-color: #fff;
     background-image: url(../images/menu-icon.svg);
@@ -98,7 +95,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
 }
 
 .sidebar-second {
@@ -138,7 +135,7 @@ body {
 .sidebar-first__link {
     display: block;
     margin: 0 auto;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
 }
 
 .sidebar-first__button {
@@ -357,6 +354,12 @@ body {
 .header-bottom__container {
     padding-left: 16px;
     width: 100%;
+}
+
+.main__container,
+.header-bottom__container,
+.header-top__container {
+    padding-right: 16px;
 }
 
 .main__container {
@@ -669,12 +672,8 @@ body {
 }
 
 .tourist-data {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tourist-data__block:last-child {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tourist-data__block:first-child {
@@ -756,6 +755,8 @@ body {
 /* add */
 
 .add {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 17px;
     padding: 16px;
     background-color: white;
@@ -787,6 +788,10 @@ body {
 .add__btn {
     display: flex;
     justify-content: center;
+}
+
+.add__btn svg {
+    margin-right: 6.5px;
 }
 
 .add__item:not(:last-child) {
@@ -831,10 +836,13 @@ body {
 /* STYLIZATION OF SERVICES */
 
 .service-top {
+    padding: 8px 0;
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
+
 
 .service-top__block {
     display: flex;
@@ -862,6 +870,11 @@ body {
     background-repeat: no-repeat;
     background-position: left;
     background-color: transparent;
+}
+
+.service__item {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 /* cruise-schedule */
@@ -902,7 +915,8 @@ body {
 .service__item {
     padding: 8px 16px;
     padding-bottom: 17px;
-    background-color: white;
+    padding-top: 0;
+    background-color: #F6F6F6;
     border-radius: 4px;
     margin-bottom: 10px;
 
@@ -917,10 +931,10 @@ body {
     width: 100%;
 }
 
- .service-insurance .service-list {
+.service-insurance .service-list {
     padding-bottom: 8px;
     margin-bottom: 8px;
- }
+}
 
 .service-item {
     display: flex;
@@ -1748,7 +1762,8 @@ body {
 
 .payment .bonus {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    ;
     margin-bottom: 16px;
     padding: 12px;
     border: 1px solid #CECECE;
