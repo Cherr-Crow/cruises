@@ -10,6 +10,12 @@
         display: none;
     }
 
+    .sidebar-second__button span {
+        background-image: url(../images/Arrow-close-icon.svg);
+        margin-right: 0;
+        padding: 0;
+    }
+
     .wrapper .sidebar-close {
         display: block;
     }
@@ -33,11 +39,6 @@
         padding-top: 10px;
     }
 
-    .sidebar-second__button span {
-        background-image: url(../images/Arrow-close-icon.svg);
-        margin-right: 0;
-        padding: 0;
-    }
 }
 
 @media (max-width: 968px) {
