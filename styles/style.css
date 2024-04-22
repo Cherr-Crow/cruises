@@ -278,6 +278,14 @@ body {
     color: white;
     font-weight: bold;
     font-size: 16px;
+
+    background-image: url(../images/menu-item-min.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    align-items: center;
+    padding-left: 48px;
+    height: 34px;
 }
 
 /* header bottom */
@@ -346,22 +354,13 @@ body {
 }
 
 .main .main__container,
-.header-top__container,
 .header-bottom__container {
     padding-left: 16px;
     width: 100%;
 }
 
-.header-top__container {
-    padding-left: 51px;
-}
-
 .main__container {
     padding-bottom: 16px;
-}
-
-.header-top__container {
-    padding-left: 45px;
 }
 
 .main .main__container {
@@ -670,11 +669,20 @@ body {
 }
 
 .tourist-data {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2;
-    gap: 32px;
-    row-gap: 3px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tourist-data__block:last-child {
+    width: 100%;
+}
+
+.tourist-data__block:first-child {
+    margin-bottom: 8px;
+}
+
+.tourist-data__block:not(:last-child) {
+    margin-right: 32px;
 }
 
 .tourist-data:last-child .tourist-data__block span {

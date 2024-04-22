@@ -1,17 +1,13 @@
-@media (max-width: 1260px) {
-    .wrapper .sidebar {
-        position: fixed;
-    }
-}
 
-@media (max-width: 1044px) {
 
-    .header-top__container {
-     padding-left: 16px;
-    }
+@media (max-width: 1300px) {
 
     .container-wrapper {
         padding-left: 50px;
+    }
+
+    .sidebar {
+        display: none;
     }
 
     .wrapper .sidebar-close {
@@ -35,10 +31,6 @@
 
     .sidebar-second__button {
         padding-top: 10px;
-    }
-
-    .sidebar {
-        display: none;
     }
 
     .sidebar-second__button span {
