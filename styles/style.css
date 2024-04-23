@@ -860,7 +860,12 @@ body {
     display: flex;
 }
 
-.service-cruise, .service-transfer, .service-excursion, .service-hotel, .service-airline, .service-insurance {
+.service-cruise,
+.service-transfer,
+.service-excursion,
+.service-hotel,
+.service-airline,
+.service-insurance {
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -949,14 +954,17 @@ body {
     display: block;
 }
 
-.service-insurance__item .service-item__block:last-child {
+.service-insurance__item .service-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.service-insurance__item .service-list>div:last-of-type {
     margin-left: auto;
-    justify-content: flex-end;
 }
 
 .service-insurance__status {
-  margin-left: auto;
-  justify-content: flex-end;
+    margin-left: auto;
+    justify-content: flex-end;
 }
 
 .service-insurance .service-list {
@@ -971,6 +979,10 @@ body {
 
 .service-item:not(:last-child) {
     margin-bottom: 8px;
+}
+
+.service-item:nth-child() {
+ margin-bottom: 0;
 }
 
 .service-list__block {
