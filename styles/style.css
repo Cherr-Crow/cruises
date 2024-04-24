@@ -800,6 +800,11 @@ body {
 .add__btn {
     display: flex;
     justify-content: center;
+    transition: ease-in-out .3s;
+}
+
+.add__btn:hover {
+    background-color: #E55300;
 }
 
 .add__btn svg {
@@ -926,6 +931,11 @@ body {
     background-color: #E3E6EA;
     color: #0F7EE6;
     border-radius: 4px;
+    transition:  ease-in-out .3s;
+}
+
+.cruise-schedule__btn:hover {
+  background-color: #BBD9F5;
 }
 
 /* service-list */
@@ -982,7 +992,7 @@ body {
 }
 
 .service-item:nth-child() {
- margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .service-list__block {
@@ -1273,6 +1283,11 @@ body {
     border-radius: 2px;
     color: white;
     max-height: 98px;
+    transition:  ease-in-out .3s;
+}
+
+.chat-form__btn:hover {
+    background-color: #0D61AF;
 }
 
 .chat-realizer,
@@ -1527,6 +1542,11 @@ body {
     color: white;
     font-size: 16px;
     font-weight: 600;
+    transition: ease-in-out .3s;
+}
+
+.payment-btns__btn:hover {
+    background-color: #E55300;
 }
 
 .payment-btns__btn:first-child {
@@ -1569,6 +1589,41 @@ body {
     margin-right: 10px;
     background-color: #E9F2FB;
     border-radius: 8px;
+}
+
+.payment-discount__btn {
+    display: flex;
+    justify-content: center;
+    max-width: 297px;
+    padding: 6px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    background-color: #FF9600;
+    border-radius: 4px;
+    transition: .3s ease-in-out;
+}
+
+.payment-discount__btn:hover {
+    background-color: #E55300;
+}
+
+.payment-btns__btn:first-child {
+    max-width: 275px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 16px;
+} 
+
+.payment-btns__btn {
+    background-image: url(../images/wrap.svg);
+    background-repeat: no-repeat;
+    background-position: 18px 10px;
+}
+
+.payment-btns__btn:last-child {
+    background-position: 74px 10px;
 }
 
 .payment-bonus {
