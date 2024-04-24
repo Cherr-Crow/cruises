@@ -406,6 +406,12 @@ body {
     background-color: #6AACEA;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    transition:  ease-in-out .3s ;
+}
+
+.tabs__btn:hover {
+    padding: 10px 6px;
+    background-color: #0F7EE6;
 }
 
 .tabs__btn--active {
