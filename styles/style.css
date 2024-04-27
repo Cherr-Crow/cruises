@@ -66,6 +66,10 @@ body {
     display: none;
 }
 
+.container-wrapper {
+    padding-left: 266px;
+}
+
 .wrapper .sidebar {
     background: var(--primary);
     position: fixed;
@@ -75,10 +79,6 @@ body {
     height: 100%;
     padding: 26px 0;
     transition: all 0.5s ease;
-}
-
-.container-wrapper {
-    padding-left: 266px;
 }
 
 .sidebar-icon {
@@ -277,6 +277,8 @@ body {
 }
 
 .header-top__title {
+    display: flex;
+    align-items: center;
     margin: 0;
     color: white;
     font-weight: bold;
@@ -286,7 +288,8 @@ body {
     background-repeat: no-repeat;
     background-position: left;
     display: flex;
-    align-items: center;
+    align-items: left center;
+    padding: 0;
     padding-left: 48px;
     height: 34px;
 }
@@ -887,6 +890,73 @@ body {
     padding-right: 16px;
 }
 
+.cruise-warn {
+    margin-right: 8px;
+    color: #FF5757;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.service-warn {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #E7E7E7;
+
+    background-image: url(../images/icon-warning-new.svg);
+ background-repeat: no-repeat;
+    background-position: 12px 10px;
+}
+
+.service-warn label span {
+    font-size: 14px;
+    color: #112F4B;
+}
+
+.service-package {
+    display: none;
+}
+
+.service-package .service-bottom {
+    padding-right: 15px;
+}
+
+.service-cruise__title {
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #0F7EE6;
+}
+
+.service-warn__form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+    padding-left: 52px;
+}
+
+.service-warn__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    width: 140px;
+    padding: 6px;
+    background-color: #FF8929;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    border-radius: 2px;
+    
+}
+
+.service-warn__btn:hover {
+    background-color: #E55300;
+}
+
 .service-top__span {
     display: block;
     margin-right: 6px;
@@ -911,7 +981,6 @@ body {
     background-color: transparent;
     cursor: pointer;
 }
-
 
 /* cruise-schedule */
 
