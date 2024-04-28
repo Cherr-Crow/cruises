@@ -951,10 +951,6 @@ body {
     color: #112F4B;
 }
 
-.service-package {
-    display: none;
-}
-
 .service-package .service-bottom {
     padding-right: 15px;
 }

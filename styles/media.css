@@ -77,14 +77,6 @@
 }
 
 @media (max-width: 968px) {
-    .service {
-        display: none;
-    }
-
-    .service-package {
-        display: block;
-    }
-
     .payment-mini {
         display: block;
     }
