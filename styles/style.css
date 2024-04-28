@@ -1166,6 +1166,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 16px;
 }
 
 .service-result {
@@ -2113,3 +2114,14 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.specially-descr {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0A2239;
+}
+
+.specially-descr:first-child {
+    margin-right: 8px;
+}
+ 
